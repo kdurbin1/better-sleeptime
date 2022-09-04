@@ -23,7 +23,7 @@ function handleOnClick() {
     now.setMinutes(now.getMinutes() + 90);
     let elm = document.createElement("div");
     elm.innerText = now.toLocaleTimeString("en-US", {timeStyle: "short" });
-    elm.style.color = colors[i];
+    elm.color = colors[i - 1]; //FIXME
     hours.innerHTML += now.toLocaleTimeString("en-US", { timeStyle: "short" }) + "<br />";
   } 
 }
